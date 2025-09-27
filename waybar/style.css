@@ -1,0 +1,266 @@
+@import "../omarchy/current/theme/waybar.css";
+@import "theme.css";
+
+* {
+	font-family: "0xProto Nerd Font";
+	font-weight: bold;
+	font-size: 13px;
+	color: @main-fg;
+}
+
+/* main outline */
+
+window#waybar {
+	background-color: @outline;
+}
+
+/* main background */
+
+window#waybar > box {
+	margin: 0px;
+	background-color: @main-bg;
+}
+
+/* hoverables */
+
+#custom-theme_switcher:hover,
+#idle_inhibitor:hover,
+#clock.date:hover,
+#network:hover,
+#bluetooth:hover,
+#custom-system_update:hover,
+#mpris:hover,
+#pulseaudio:hover,
+#wireplumber:hover {
+	color: @hover-fg;
+}
+
+/* states */
+
+.warning { color: @warning; }
+.critical { color: @critical; }
+.charging { color: @charging; }
+.deactivated,
+.paused,
+#pulseaudio.output.muted,
+#pulseaudio.input.source-muted,
+#wireplumber.muted {
+	color: @hover-fg;
+}
+
+/* dividers */
+
+#custom-left_div,
+#custom-left_inv,
+#custom-right_div,
+#custom-right_inv {
+	font-size: 23.1px;
+}
+
+/* buttons */
+
+button {
+	border-radius: 16px;
+	padding: 0 10px;
+}
+button:hover {
+	background-color: @hover-bg;
+	color: @hover-fg;
+}
+
+/* tooltips */
+
+tooltip {
+	border: 2px solid @main-br;
+	border-radius: 10px;
+	background-color: @main-bg;
+}
+tooltip label {
+	margin: 2px 4px;
+	font-weight: normal;
+}
+tooltip decoration {
+	border: none;
+	background-color: transparent;
+}
+
+/* modules */
+
+#mpris {
+	padding: 0 10px 0 5px;
+	font-size: 12px;
+	background-color: @foreground;
+	color: @background;
+}
+
+/* volume */
+
+#custom-left_div.6 {
+	color: @level-3;
+}
+#pulseaudio,
+#wireplumber {
+	background-color: @level-3;
+}
+
+/* brightness */
+
+#custom-left_div.7 {
+	background-color: @level-3;
+	color: @level-2;
+}
+#backlight {
+	background-color: @level-2;
+}
+
+/* battery */
+
+#custom-left_div.8 {
+	background-color: @level-3;
+	color: @level-2;
+}
+#battery {
+	background-color: @level-3;
+}
+#custom-left_inv.2 {
+	color: @level-2;
+  background-color: @level-1;
+}
+
+/* power menu */
+
+#custom-power_menu {
+	border-radius: 16px;
+	padding: 0 19px 0 16px;
+	font-size: 20px;
+	color: @foreground;
+}
+#custom-power_menu:hover {
+	background-color: @hover-bg;
+}
+
+#custom-left_div.2 {
+	color: @level-1;
+}
+#temperature {
+	background-color: @level-1;
+}
+
+/* memory */
+
+#custom-left_div.3 {
+	background-color: @level-1;
+	color: @level-2;
+}
+#memory {
+	background-color: @level-2;
+}
+
+/* cpu */
+
+#custom-left_div.4 {
+	background-color: @level-2;
+	color: @level-3;
+}
+#cpu {
+	background-color: @level-3;
+}
+#custom-left_inv.1 {
+	color: @level-3;
+}
+
+/* distro icon */
+
+#custom-left_div.5,
+#custom-right_div.2 {
+	color: @foreground;
+}
+
+/* idle inhibitor & time */
+
+#custom-right_inv.1 {
+	color: @level-3;
+}
+#idle_inhibitor {
+	background-color: @level-1;
+}
+#clock.time {
+	padding-right: 6px;
+	background-color: @level-1;
+}
+#custom-right_div.3 {
+	background-color: @level-2;
+	color: @level-3;
+}
+
+/* date */
+
+#clock.date {
+	padding-left: 6px;
+	background-color: @level-1;
+}
+#custom-right_div.4 {
+	background-color: @level-1;
+	color: @level-2;
+}
+
+/* quick settings */
+
+#network {
+	background-color: @level-1;
+	padding: 0 6px 0 4px;
+}
+#bluetooth {
+	background-color: @level-1;
+	padding: 0 5px;
+}
+#custom-screenrecording-indicator{
+	background-color: @level-1;
+	padding: 0 5px;
+}
+#custom-system_update {
+	background-color: @level-1;
+	padding: 0 8px 0 2px;
+}
+#custom-right_div.5 {
+	color: @level-1;
+}
+
+#custom-omarchy{
+  padding: 0px 10px;
+}
+
+#language{
+  background-color: @level-2;
+}
+
+/* workspaces */
+
+#custom-left_div.1,
+#custom-right_div.1 {
+	color: @level-2;
+}
+#workspaces {
+	padding: 0 1px;
+	background-color: @level-2;
+}
+#workspaces .active label {
+	font-size: 20px;
+	color: @foreground;
+}
+
+/* window title & count */
+
+#window {
+	margin-left: 12px;
+}
+#window label {
+	font-weight: normal;
+}
+#windowcount {
+	margin-right: 12px;
+}
+#windowcount label {
+	color: @hover-fg;
+}
+

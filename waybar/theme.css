@@ -1,0 +1,26 @@
+/* catppuccin-macchiato */
+@define-color level-1 shade(@background, 0.4); 
+@define-color level-2 shade(@background, 0.6);
+@define-color level-3 shade(@background, 0.8);
+
+/*
+	br - border
+	bg - background
+	fg - foreground
+*/
+
+/* main colors */
+
+@define-color main-br		@level-3;
+@define-color main-bg		@background;
+@define-color main-fg		@foreground;
+@define-color hover-bg	alpha(@background, 0.1);
+@define-color hover-fg		shade(@foreground, 0.25);
+@define-color outline		shade(@background, 0.5);
+
+
+/* state colors */
+
+@define-color warning		@yellow;
+@define-color critical		@red;
+@define-color charging		@green;
