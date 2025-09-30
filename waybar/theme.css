@@ -3,6 +3,16 @@
 @define-color level-2 shade(@background, 0.6);
 @define-color level-3 shade(@background, 0.8);
 
+@define-color neutral #4C4F69;
+@define-color error #D20F39;
+@define-color success #40A02B;
+@define-color warning #DF8E1D;
+@define-color primary #1E66F5;
+@define-color accent #EA76CB;
+@define-color info #179299;
+@define-color base #ACB0BE;
+
+
 /*
 	br - border
 	bg - background
@@ -21,6 +31,5 @@
 
 /* state colors */
 
-@define-color warning		@yellow;
-@define-color critical		@red;
-@define-color charging		@green;
+@define-color critical		@error;
+@define-color charging		@success;

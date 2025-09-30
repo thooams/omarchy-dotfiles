@@ -245,8 +245,7 @@ tooltip decoration {
 	background-color: @level-2;
 }
 #workspaces .active label {
-	font-size: 20px;
-	color: @foreground;
+	color: @accent;
 }
 
 /* window title & count */
